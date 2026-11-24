@@ -40,7 +40,7 @@ export default function PrivacyPage() {
         {/* Main Policy Card */}
         <main className="rounded-2xl border border-gray-200 bg-white p-6 shadow-xs sm:p-10">
           <h1 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
-            Privacy Policy
+            Privacy Policy &amp; Disclosure
           </h1>
           <p className="mt-2 text-sm font-medium text-gray-500">
             Last updated: November 2026
@@ -60,11 +60,25 @@ export default function PrivacyPage() {
                 Affiliate Disclosure
               </h2>
               <p>
-                KibblePerPound participates in affiliate marketing programs, including
-                the Amazon Services LLC Associates Program and Impact partner networks
-                (such as Chewy, Petco, Walmart, and Target). When you click on retailer
-                links on our site and make a qualifying purchase, we may earn a
-                commission at no additional cost to you.
+                <strong className="font-semibold text-slate-900">
+                  As an Amazon Associate I earn from qualifying purchases.
+                </strong>{' '}
+                KibblePerPound also participates in affiliate marketing programs through
+                Impact partner networks (such as Chewy, Petco, Walmart, and Target).
+                When you click on retailer links on our site and make a qualifying
+                purchase, we may earn a commission at no additional cost to you.
+              </p>
+            </section>
+
+            <section className="space-y-2">
+              <h2 className="text-xl font-bold tracking-tight text-slate-900">
+                Pricing Accuracy
+              </h2>
+              <p>
+                Product weights, regular prices, and Auto-Ship discounts are verified
+                regularly from retailer feeds, but prices and availability can change at
+                any time. Always confirm the final price and bag size on the merchant&apos;s
+                checkout page before purchasing.
               </p>
             </section>
 
@@ -77,6 +91,23 @@ export default function PrivacyPage() {
                 analytics and third-party retailer affiliate cookies may be used to
                 measure site traffic and attribute qualifying referrals when you visit
                 partner stores.
+              </p>
+            </section>
+
+            <section className="space-y-2">
+              <h2 className="text-xl font-bold tracking-tight text-slate-900">
+                Contact Us
+              </h2>
+              <p>
+                If you have questions about this Privacy Policy, pricing data, or
+                affiliate partnerships, contact us at{' '}
+                <a
+                  href="mailto:contact@kibbleperpound.com"
+                  className="font-medium text-[#126b47] hover:underline"
+                >
+                  contact@kibbleperpound.com
+                </a>
+                .
               </p>
             </section>
           </div>
