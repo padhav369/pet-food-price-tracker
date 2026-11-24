@@ -12,14 +12,17 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+
 export const metadata: Metadata = {
-  title: {
-    default: "KibblePerPound — Compare Pet Food Prices Per Pound Across 6 Stores",
-    template: "%s | KibbleMath",
-  },
+  title: 'KibblePerPound — Compare Pet Food Prices Per Pound Across 6 Stores',
   description:
-    "Compare true pet food prices per pound ($/lb) across Chewy, Amazon, Petco, PetSmart, Walmart, and Target—including 35% first-time Auto-Ship discounts.",
+    'Compare true unit prices ($/lb) across Chewy, Amazon, Petco, PetSmart, Walmart, and Target.',
+  other: {
+    'impact-site-verification': 'ab0fcfbe-c0e9-444c-a332-22cf229076fa',
+  },
 };
+
+
 
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -28,7 +31,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
 }
